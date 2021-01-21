@@ -1,0 +1,443 @@
+@charset "UTF-8";
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select, textarea {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+td:not([align]), th:not([align]) {
+  text-align: left;
+}
+
+h1,
+h2 {
+  font-family: "Acme", sans-serif;
+}
+
+header {
+  background-color: #df8f34;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: bold;
+}
+header nav img {
+  width: 100px;
+}
+header nav i {
+  font-size: 21px;
+  color: #9760e2;
+}
+
+#breadcrumb ul li {
+  font-weight: bold;
+  font-size: 16px;
+}
+#breadcrumb #lienPrecedent:hover {
+  text-decoration: underline;
+}
+
+/*---------------PAGE 1----------------*/
+#mainContent {
+  text-align: center;
+  background-color: gainsboro;
+  margin: 5%;
+}
+#mainContent h1 {
+  font-size: 36px;
+  font-weight: bolder;
+  padding-top: 4%;
+}
+#mainContent figure {
+  border: 2px solid black;
+  width: 30%;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  box-shadow: 5px 5px 5px 5px #9760e2;
+}
+#mainContent figure img {
+  border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  max-width: 100%;
+}
+#mainContent figure figcaption .nom {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Acme", sans-serif;
+}
+#mainContent figure figcaption .prix {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Acme", sans-serif;
+}
+#mainContent figure figcaption .prix::after {
+  content: "€";
+}
+#mainContent figure figcaption .lienProduit {
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid blue;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  font-size: 22px;
+  transition: all 400ms;
+}
+#mainContent figure figcaption .lienProduit:hover {
+  color: red;
+  box-shadow: 10px 5px 10px 5px #df8f34;
+}
+
+/*---------------FIN PAGE 1----------------*/
+/*---------------PAGE 2----------------*/
+#breadcrumb {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+#breadcrumb ul li {
+  list-style-type: none;
+  display: inline;
+}
+#breadcrumb ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#mainProduit h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+#mainProduit section {
+  display: flex;
+  justify-content: space-around;
+  background-color: gainsboro;
+  box-shadow: 5px 5px 5px 5px #df8f34;
+  margin-bottom: 15%;
+}
+#mainProduit section #produitPres {
+  display: flex;
+  flex-direction: column;
+}
+#mainProduit section #produitPres img {
+  width: 300px;
+  border: 2px solid #9760e2;
+  box-shadow: 5px 5px 5px 5px #df8f34;
+}
+#mainProduit section #prodtuiAction {
+  text-align: center;
+  padding: 15px;
+  padding-top: 3%;
+}
+#mainProduit section #prodtuiAction #produitDescription {
+  margin-bottom: 2%;
+}
+#mainProduit section #prodtuiAction #produitDescription::before {
+  content: "Description: ";
+  font-weight: bold;
+  font-size: 21px;
+}
+#mainProduit section #prodtuiAction #produitPrix {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3%;
+}
+#mainProduit section #prodtuiAction #lienPanier {
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid blue;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  font-size: 22px;
+  transition: all 400ms;
+  cursor: pointer;
+}
+#mainProduit section #prodtuiAction #lienPanier:hover {
+  color: red;
+  box-shadow: 10px 5px 10px 5px #df8f34;
+}
+#mainProduit section #prodtuiAction #lienPanier:hover {
+  color: red;
+  box-shadow: 10px 10px 10px 10px #9760e2;
+}
+
+/*---------------FIN PAGE 2----------------*/
+/*---------------DEBUT PAGE 3----------------*/
+#mainPanier h1 {
+  font-size: 35px;
+  font-weight: bold;
+}
+#mainPanier #panierInfo {
+  padding: 3%;
+}
+#mainPanier #panierInfo h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+#mainPanier #panierInfo .articleChoise {
+  display: flex;
+  justify-content: space-between;
+  background-color: gainsboro;
+  margin-bottom: 5%;
+  padding: 3%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 7px 7px 7px 7px #9760e2;
+}
+#mainPanier #panierInfo .articleChoise .articleTitle img {
+  width: 200px;
+  border: 2px solid #df8f34;
+  box-shadow: 10px 5px #df8f34;
+}
+#mainPanier #panierInfo .articleChoise .articleTitle .nom {
+  font-size: 25px;
+  font-weight: bold;
+}
+#mainPanier #panierInfo .articleChoise .articlePrix::before {
+  content: "PRIX: ";
+  font-size: 16px;
+  font-weight: bold;
+}
+#mainPanier #panierInfo .articleChoise .articlePrix .prix {
+  font-size: 36px;
+  font-weight: bold;
+}
+#mainPanier #panierInfo .articleChoise .articlePrix .prix::after {
+  content: "€";
+}
+#mainPanier #panierInfo .prixTotal {
+  width: 25%;
+  text-align: center;
+  margin: auto;
+  background-color: gainsboro;
+  padding: 2%;
+  box-shadow: 10px 5px #df8f34;
+}
+#mainPanier #panierInfo .prixTotal::before {
+  content: "PRIX TOTAL: ";
+  font-size: 21px;
+  font-weight: bold;
+}
+#mainPanier #panierInfo .prixTotal p {
+  font-size: 25px;
+  font-weight: bold;
+}
+#mainPanier #panierInfo .prixTotal p::after {
+  content: "€";
+}
+#mainPanier #panierFormulaire {
+  text-align: center;
+}
+#mainPanier #panierFormulaire #formulaire {
+  width: 80%;
+  margin: auto;
+  padding-top: 2%;
+  background-color: gainsboro;
+  box-shadow: 10px 5px #9760e2;
+  margin-bottom: 10%;
+  margin-top: 4%;
+}
+#mainPanier #panierFormulaire #formulaire input {
+  border: 2px solid #df8f34;
+}
+#mainPanier #panierFormulaire #formulaire label {
+  font-size: 16px;
+  font-weight: bold;
+}
+#mainPanier #panierFormulaire #formulaire .formulairenName {
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+#mainPanier #panierFormulaire #formulaire .formulairenName small {
+  color: red;
+  position: relative;
+  top: 20px;
+  right: 150px;
+}
+#mainPanier #panierFormulaire #formulaire .formulairePosition {
+  margin-bottom: 4%;
+}
+#mainPanier #panierFormulaire #formulaire .formulairePosition #adress {
+  margin-right: 40px;
+}
+#mainPanier #panierFormulaire #formulaire .formulairePosition small {
+  color: red;
+  position: relative;
+  top: 20px;
+  right: 150px;
+}
+#mainPanier #panierFormulaire #formulaire .formulaireEmail small {
+  color: red;
+  position: relative;
+  top: 20px;
+  right: 150px;
+}
+#mainPanier #panierFormulaire #formulaire #submitForm {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid blue;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  font-size: 22px;
+  transition: all 400ms;
+  font-size: 16px;
+}
+#mainPanier #panierFormulaire #formulaire #submitForm:hover {
+  color: red;
+  box-shadow: 10px 5px 10px 5px #df8f34;
+}
+
+/*---------------FIN PAGE 3----------------*/
+#breadcrumb span {
+  font-size: 35px;
+  font-weight: bold;
+}
+#breadcrumb span a {
+  text-decoration: none;
+  color: red;
+}
+
+#mainConfirmation {
+  font-size: 25px;
+  background-color: gainsboro;
+  margin-top: 30%;
+}
+#mainConfirmation span {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* // LE FOOTER // //*/
+footer {
+  background-color: gainsboro;
+  bottom: 0px;
+}
+footer #mainFooterListe {
+  display: flex;
+  justify-content: space-around;
+}
+footer #mainFooterListe li {
+  list-style-type: none;
+  color: black;
+}
+footer #mainFooterListe li h3 {
+  font-weight: bold;
+}
+
+@media screen and (max-width:426px) {
+  body {
+    max-width: 426px;
+    max-width: 100%;
+  }
+
+  #mainContent figure figcaption .lienProduit {
+    font-size: 16px;
+  }
+
+  #mainProduit section {
+    flex-direction: column;
+    margin-bottom: 20%;
+  }
+  #mainProduit section #produitPres {
+    margin-bottom: 3%;
+  }
+  #mainProduit section #produitPres img {
+    margin: auto;
+  }
+  #mainProduit section #prodtuiAction {
+    margin-bottom: 3%;
+  }
+  #mainProduit section #prodtuiAction #produitDescription {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  #mainProduit section #prodtuiAction #produitPrix {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  #mainProduit section #prodtuiAction #lienPanier {
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  #mainProduit section {
+    margin-top: 10%;
+  }
+  #mainProduit section #prodtuiAction {
+    padding-top: 10%;
+  }
+
+  #mainPanier #panierInfo .articleChoise {
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+  #mainPanier #panierFormulaire #formulaire {
+    width: 50%;
+  }
+
+  footer #mainFooterListe {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+  #mainProduit section {
+    margin-top: 20%;
+    margin-bottom: 61%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

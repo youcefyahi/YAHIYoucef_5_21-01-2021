@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Orinoco - Votre Panier </title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="15675819263013_image1.png" alt="Logo Orinoco" />
+            <i class="fas fa-shopping-basket"></i>
+        </nav>
+    </header>
+
+    <div id="breadcrumb">
+        <ul>
+            <li>
+                <a href="index.html" id="lienPrecedent">/..Acceuil</a>/
+            </li>
+            <li>Pannier</li>
+        </ul>
+    </div>
+    <main id="mainPanier">
+        <h1>VOTRE PANIER</h1>
+        <section id="panierInfo">
+            <h2>Vos Achats</h2>
+
+        </section>
+        <section id="panierFormulaire">
+            <!--faire le formulaire -->
+            <form id="formulaire">
+                <div class="formulairenName">
+                    <label for="firstName">Nom</label>
+                    <input type="text" name="firstName" id="firstName">
+                    <small id="smallFirsName"></small>
+
+                    <label for="lastName">Prénom</label>
+                    <input type="text" name="lastName" id="lastName">
+                    <small id="smallLastName"></small>
+                </div>
+
+
+
+                <div class="formulairePosition ">
+                    <label for="adress">Adresse</label>
+                    <input type="text" name="adress" id="adress">
+                    <small id="smallLAdress"></small>
+
+
+
+                    <label for="city">Ville</label>
+                    <input type="text" name="city" id="city">
+                    <small id="smallCity"></small>
+                </div>
+
+                <div class="formulaireEmail">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <small id="emailEmail"></small>
+
+                </div>
+
+
+                <input type="submit" value="Envoie de formulaire " id="submitForm">
+                <!--Bouton de validation -->
+            </form>
+
+        </section>
+
+
+    </main>
+    <footer>
+        <ul id="mainFooterListe">
+            <li>
+                <h3>A propos:</h3>
+                <ul>
+                    <li>Qui sommes-nous</li>
+                    <li>Notre magasin.</li>
+                    <li>Recrutement.</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Aide:</h3>
+                <ul>
+                    <li>Suivre mon colis</li>
+                    <li>Nous contacter</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Service Client</h3>
+                <ul>
+                    <li>06 06 06 06 06</li>
+                    <li>Du lundi au vendredi <br>de 9h à 18h</li>
+                </ul>
+            </li>
+        </ul>
+    </footer>
+
+
+
+
+
+    <script src="js/panier.js "></script>
+
+</body>
+
+</html>
