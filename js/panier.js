@@ -225,7 +225,7 @@ window.onload = () => {
 
         form.addEventListener('submit', function(e) {
             e.preventDefault();
-            if (validFirstName(form.firstName) && validLastName(form.lastName) && validAdress(form.adress) && validCity(form.city) && validEmail(form.email)) {
+            if (validFirstName(form.firstName) && validLastName(form.lastName) && validAdress(form.adress) && validCity(form.city) && validEmail(form.email) >= 1) {
 
                 inserPost({
                     contact: {
