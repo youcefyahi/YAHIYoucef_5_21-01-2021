@@ -1,13 +1,6 @@
 window.onload = () => {
 
-
-    setTimeout(function() {
-        console.log("test asyncrhone")
-    }, 5000);
-
-    console.log("test asynchrine attente")
-
-    if (localStorage.length = 0) {
+    if (localStorage.length == 0) {
         let panierInfo = document.querySelector("#panierInfo");
         panierInfo.innerHTML = `<p>Pas d objet</p>`
     } else {
@@ -204,7 +197,7 @@ window.onload = () => {
 
 
         const inserPost = data => {
-            let response = fetch("http://localhost:3000/api/teddies/order", {
+            fetch("http://localhost:3000/api/teddies/order", {
                     method: 'POST',
                     headers: {
                         'Content-Type': "application/json"

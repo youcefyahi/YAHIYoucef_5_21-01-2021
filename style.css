@@ -427,6 +427,9 @@ footer #mainFooterListe li h3 {
   #mainPanier #panierFormulaire #formulaire {
     width: 50%;
   }
+  #mainPanier #panierFormulaire #formulaire .formulairePosition #adress {
+    margin: initial;
+  }
 
   footer #mainFooterListe {
     flex-direction: column;
