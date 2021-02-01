@@ -25,18 +25,14 @@ fetch(url).then(response => response.json().then(data => {
         newFigure.appendChild(newFigcaption);
 
         // AJOUT DES BALISE <P> AJOUR DE CLASS EN ATTENTE DE RECEVOIR LES DONNER //
-        newFigcaption.innerHTML = `<p class="nom"></p>` + `<p class="prix"></p>`;
+        newFigcaption.innerHTML = `<p class="nom"></p>` + `<p class="prix"></p>` + `<a  class="lienProduit" href=produit.html?id=${data[i]._id}>Voir Article</a>`;
 
         let lien = document.createElement("a");
 
         newFigcaption.appendChild(lien);
 
-        lien.innerText = "Voir l'article";
-        lien.setAttribute("href", "produit.html");
-        lien.classList.add("lienProduit");
 
-        let machin = document.querySelectorAll(".prix");
-        console.log(machin);
+
 
         // AJOUT DES ELEMENTS NOM, PRIX , IMAGE PRISE VIA L API APPLER 
 
@@ -51,12 +47,7 @@ fetch(url).then(response => response.json().then(data => {
 
         // AJOUT DE L EVENEMENT QUI STOCK DANS LOCAL STORAGE AU CLICK LES DONNER VOULU // 
 
-        newLien[i].addEventListener('click', function(event) {
 
-
-    
-            localStorage.setItem("id", data[i]._id);
-        });
     };
 
 

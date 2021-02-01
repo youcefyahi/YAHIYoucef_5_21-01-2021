@@ -3,7 +3,9 @@ window.onload = () => {
 
     // CHARGE LES DOONER STOCKER  DANS LOCAL STORAGE
 
-    let id = localStorage.getItem("id");
+    const params = (new URL(document.location)).searchParams;
+    const id = params.get('id'); 
+    
 
 
     let url= "http://localhost:3000/api/teddies/"+id;{
@@ -67,6 +69,7 @@ window.onload = () => {
             }
         
         
+
             let ajoutPanier = document.querySelector("#lienPanier");
         
         
