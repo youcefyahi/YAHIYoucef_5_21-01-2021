@@ -391,6 +391,11 @@ footer {
         #panierFormulaire {
             #formulaire {
                 width: 50%;
+                .formulairePosition {
+                    #adress {
+                        margin: initial;
+                    }
+                }
             }
         }
     }
