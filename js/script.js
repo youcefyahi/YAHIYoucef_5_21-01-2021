@@ -54,11 +54,7 @@ fetch(url).then(response => response.json().then(data => {
         newLien[i].addEventListener('click', function(event) {
 
 
-            localStorage.setItem("nom", data[i].name);
-            localStorage.setItem("prix", data[i].price);
-            localStorage.setItem("image", data[i].imageUrl);
-            localStorage.setItem("description", data[i].description);
-            localStorage.setItem("couleur", data[i].colors);
+    
             localStorage.setItem("id", data[i]._id);
         });
     };
