@@ -2,7 +2,17 @@ window.onload = () => {
 
     if (localStorage.length == 0) {
         let panierInfo = document.querySelector("#panierInfo");
-        panierInfo.innerHTML = `<p>Pas d objet</p>`
+        panierInfo.innerHTML = `<p>Pas d objet</p>`;
+       document.querySelector("#submitForm").addEventListener("click",function(event){
+           event.preventDefault();
+       })
+        
+
+
+       
+
+      
+
     } else {
         let donéeArticle = JSON.parse(localStorage.getItem("article"));
 
